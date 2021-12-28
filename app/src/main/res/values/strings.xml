@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My App</string>
+     <string-array name="categories">
+         <item>fruites</item>
+         <item>vegetables</item>
+         <item>fish</item>
+         <item>salamon</item>
+         <item>rais</item>
+
+     </string-array>
+</resources>

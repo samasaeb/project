@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Food_Activity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        >
+        <Button
+            android:id="@+id/vectorAddFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/back"
+            android:background="@null">
+
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Analyzer"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="90dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_AddFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300px"
+        android:gravity="center"
+        android:text="Add Food Details"
+        android:textColor="@color/blue"
+        android:textSize="100px"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560px"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_name_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="80px"
+            android:text="Name"
+            android:textColor="@color/blue"
+            android:textSize="100px"
+
+            />
+        <EditText
+            android:id="@+id/editTextNameFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fieldborder"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginTop="70px"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="40px"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="860px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="80px"
+            android:text="Category"
+            android:textColor="@color/blue"
+            android:textSize="100px"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinner"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="70px"
+            android:layout_marginRight="40px"
+            android:background="@drawable/fieldborder"
+            android:ems="10"
+            android:minHeight="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_uploadPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120px"
+                android:layout_marginTop="2000px"
+                android:background="@color/blue"
+                android:clickable="true"
+                android:text="Drop Photo"
+                android:textColor="@color/white"
+                android:textSize="80px" />
+
+            <Button
+                android:id="@+id/btn_savephoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120px"
+                android:layout_marginTop="2000px"
+                android:background="@color/blue"
+                android:clickable="true"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="80px"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1200px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_calory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="80px"
+            android:text="Calory"
+            android:textColor="@color/blue"
+            android:textSize="100px"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextCalory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="70px"
+            android:layout_marginRight="300px"
+            android:background="@drawable/fieldborder"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textcal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1200px"
+            android:layout_marginTop="1300px"
+            android:text="cal/g"
+            android:textColor="@color/blue"
+            android:textSize="80px" />
+
+    <TextView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="1580px"
+        android:text="photo"
+        android:textColor="@color/blue"
+        android:textSize="100px"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Complete_Profile_Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            app:title="BMI Analyzer"
+            app:titleMarginStart="400px"
+            app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200px"
+        android:gravity="center"
+        android:text="Complete Your Information"
+        android:textColor="@color/blue"
+        android:textSize="60px"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100px"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="Gender"
+            android:textColor="@color/blue"
+            android:textSize="60px"
+            android:textStyle="bold"
+
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="Male"
+            android:textSize="80px"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="100px"
+            />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Female"
+            android:textSize="80px"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="100px"
+            />
+        </RadioGroup>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="80px"
+        android:text="Weight"
+        android:textColor="@color/blue"
+        android:textSize="60px"
+        android:textStyle="bold"
+        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fieldborder"
+            android:orientation="horizontal"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="100px"
+            >
+            <Button
+                android:id="@+id/dec_weight"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/fieldborder"
+                android:text="-"
+                android:textColor="@color/blue"
+                android:textSize="100px"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_weight"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textColor="@color/blue"
+                android:hint="0"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textSize="100px"
+                android:background="@drawable/fieldborder"
+
+                />
+
+            <Button
+                android:id="@+id/inc_weight"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/fieldborder"
+                android:text="+"
+                android:textColor="@color/blue"
+                android:textSize="100px"
+
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textkg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="kg"
+            android:textSize="80px"
+            android:textColor="@color/blue"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="80px"
+        android:text="Length"
+        android:textColor="@color/blue"
+        android:textSize="60px"
+        android:textStyle="bold"
+        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fieldborder"
+            android:orientation="horizontal"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="100px">
+            <Button
+                android:id="@+id/dec_length"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/fieldborder"
+                android:text="-"
+                android:textSize="100px"
+                android:textColor="@color/blue"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_length"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/fieldborder"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="100px"
+
+                />
+            <Button
+                android:id="@+id/inc_length"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/fieldborder"
+                android:text="+"
+                android:textColor="@color/blue"
+                android:textSize="100px"
+
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textcm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="cm"
+            android:textSize="80px"
+            android:textColor="@color/blue"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="80px"
+        android:text="Date of Birth"
+        android:textColor="@color/blue"
+        android:textSize="60px"
+        android:textStyle="bold"
+
+        />
+        <EditText
+            android:id="@+id/birth_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fieldborder"
+            android:ems="10"
+            android:hint="20/8/1999"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="50px"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="250px"
+        android:layout_marginRight="40px"
+        android:background="@color/blue"
+        android:text="Save Data"
+        android:textColor="@color/white"
+        android:textSize="60px"
+        android:clickable="true"
+        />
+
+
+</LinearLayout>

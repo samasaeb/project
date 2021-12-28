@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center|center_horizontal"
+    >
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fieldborder"
+
+
+        >
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="date"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginLeft="10px"
+            android:textColor="@color/black"
+            android:background="@drawable/fieldborder"
+
+            />
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="weight"
+            android:layout_marginLeft="120dp"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/fieldborder"
+
+            />
+
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/fieldborder"
+
+        >
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/fieldborder"
+            android:gravity="center"
+            android:hint="status"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="length"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="120dp"
+            android:textColor="@color/black"
+            android:background="@drawable/fieldborder"
+            />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
